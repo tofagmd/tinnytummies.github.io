@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <title>Home</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            li {
+                float:inherit;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header></header>
+        
+        <nav>
+           <div class="topnav">
+                <a href="Home.html">Home</a>
+                <a href="form.html">Form</a>
+                <a href="About%20Us.html">About</a>
+                <a href="contant%20us.html">Contact</a>
+            </div>
+        </nav>
+        
+        <article>
+            <img class="food" src="food/Sweet.png" alt=""><br>
+            Sweet<br>
+            
+            <button onclick="myFunction(0)">Menu</button>
+            <div class="myDIV" id="hide0">
+                <ul>
+                    <li><a href="Sweet/Cookie%20Monster%20Popcorn.html">Cookie Monster Popcorn</a></li>
+                    <li><a href="Sweet/S'mores%20Bake.html">S'mores Bake</a></li>
+                    <li><a href="Sweet3">Sweet3</a></li>
+                    <li><a href="Sweet4">Sweet4</a></li>
+                </ul>
+            </div>
+            
+            
+
+            <br>
+            <img class="food" src="food/Main%20meal.png" alt=""><br>
+            Main Meal<br>
+            
+            <button onclick="myFunction(1)">Menu</button>
+            <div class="myDIV" id="hide1">
+                <ul>
+                    <li><a href="MainMeal/Chicken%20French%20Bread%20Pizza.html">Chicken French Bread Pizza</a></li>
+                    <li><a href="MainMeal/Chicken%20Quesadillas.html">Chicken Quesadillas</a></li>
+                    <li><a href="MainMeal/Cheeseburger%20Cups.html">Cheeseburger Cups</a></li>
+                    <li><a href="MainMeal/Chicken%20Avocado%20Roll-Ups.html">Chicken Avocado Roll-Ups</a></li>
+                </ul>
+            </div>
+            
+            <br>
+            <img class="food" src="food/salad.png" alt=""><br>
+            Salad<br>
+            
+            <button onclick="myFunction(2)">Menu</button>
+            <div class="myDIV" id="hide2">
+            <ul>
+                <li><a href="Salad/Jewel Salad.html">Jewel Salad</a></li>
+                <li><a href="Salad/Chicken And Mango Salad.html">Chicken And Mango Salad</a></li>
+                <li><a href="Salad/Steak Salad.html">Steak Salad</a></li>
+                <li><a href="Salad/Chopped Broccoli and Cauliflower Salad.html"> Chopped Broccoli and Cauliflower Salad</a></li>
+            </ul>
+            </div>
+            
+            <br>
+            <img class="food" src="food/juice.png" alt=""><br>
+            Drinks<br>
+            
+            <button onClick="myFunction(3)">Menu</button>
+            <div class="myDIV" id="hide3">
+            <ul>
+                <li><a href="Juice/ABC.html">ABC juice</a></li>
+                <li><a href="Juice/Kale and Pineapple juice.html"> Kale and Pineapple juice </a></li>
+                <li><a href="Juice/COP juice.html">COP juice</a></li>
+                <li><a href="Juice/Strawberry and Apple Juice.html">Strawberry and Apple Juice</a></li>
+            </ul>
+            </div>
+            
+            <br>
+            <img class="food" src="food/Microwave.png" alt=""><br>
+            Microwave<br>
+            
+            <button onclick="myFunction(4)">Menu</button>
+            <div class="myDIV" id="hide4">
+            <ul>
+                <li><a href="Microwave/Microwave%20Mug%20Pizza.html">Microwave Mug Pizza</a></li>
+                <li><a href="Microwave/Mac%20&%20Cheese%20in%20A%20Mug.html">Mac & Cheese in A Mug</a></li>
+                <li><a href="Microwave/Brownie%20in%20a%20Mug.html">Brownie in a Mug</a></li>
+                <li><a href="Microwave/2%20minute%20scrambled%20eggs.html">2 minuts scrambled eggs</a></li>
+            </ul>
+            </div>
+        </article>
+        
+        <footer><p class="Csstext"></p></footer>
+        
+        <script>
+            document.getElementById("hide0").style.display = "none";
+            document.getElementById("hide1").style.display = "none";
+            document.getElementById("hide2").style.display = "none";
+            document.getElementById("hide3").style.display = "none";
+            document.getElementById("hide4").style.display = "none";
+            
+            function myFunction(i) {
+                var x = document.getElementsByClassName("myDIV");
+                    if (x[i].style.display === "none") {
+                        x[i].style.display = "block";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+            }
+        
+        </script>
+    </body>
+    
+   
+    
+</html>

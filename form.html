@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Tiny Tummies </title>
+		<link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+	</head>
+
+	<body> 
+        <header > </header>
+        <nav>
+            <div class="topnav">
+                <a href="Home.html">Home</a>
+                <a href="form.html">Form</a>
+                <a href="About%20Us.html">About</a>
+                <a href="contant%20us.html">Contact</a>
+            </div>
+        </nav>
+		<article >
+            <p>Help us to make our Website more useful </p>
+            <hr>
+            <br>
+            <p>rate our website : </p>
+            
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text"></label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text"></label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text"></label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text"></label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text"></label>
+            </div>
+            <br/>
+            
+            <form   method="post" target=_self > 
+                <p><fieldset>
+                <legend>1-Do you see that the recipes contain nutritional values ​​for children? </legend>
+
+                <input type="radio" name="question1" value="yes" >yes<br>
+				<input type="radio" name="question1" value="no"> no<br>
+				<input type="radio" name="question1" value="sometimes">sometimes<br>
+                </fieldset></p>
+			
+                <p><fieldset>
+                <legend>2- Have you found recipes suitable for the following ages :</legend>
+                <input type="checkbox" name="0-2" value="0-2" > 0-2 <br>
+                <input type="checkbox" name="3-5" value="3-5">3-5<br>
+                <input type="checkbox" name="10-12" value="10-12 "> 10-12 <br>
+                <input type="checkbox" name="13-15" value="13-15 ">13-15<br>
+                <input type="checkbox" name=" other" value="other  "> other <br>
+                </fieldset></p>
+		
+                <p><fieldset>
+                <legend>3- Your adivce :</legend> <br>
+                <textarea name="text"> </textarea>
+                </fieldset></p>
+                <input type="submit" value="submit" onclick="alert('Thank you for your replay')">
+                <input type="reset" value="reset">
+            </form>
+		
+		
+        </article>
+        <footer><p class="Csstext"></p></footer>
+
+	</body>
+	
+	
+</html> 

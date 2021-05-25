@@ -1,0 +1,115 @@
+header {
+    background-image: url(Style/header.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 18%;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+
+}
+
+.topnav {/*the linke bachground line*/
+    overflow: hidden;
+    background-color: hsl(247, 10%, 14%);
+    width: 99%;
+}
+
+.topnav a { /*a single link prparty*/
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 10.8%;
+    text-decoration: none;
+}
+
+.topnav a:hover { /*if point at with mouse it will change color*/
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+body{
+    background-image: url(Style/background.jpeg);
+	
+}
+
+article{/*the orgnization of the contant in the middel*/
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+	
+}
+
+footer {
+	
+    background-color: hsl(247, 10%, 14%);
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+	content:"Made with love for your children...";
+
+}.Csstext::before {
+  font-weight: bold;
+  color: white;
+	content:"Made with love for your children...";
+}
+
+.food{
+    height: 20%;
+    width: 20%;
+}
+
+#img {
+    float: right;
+	height: 30%;
+	width: 30%;
+	margin:2vw;
+}
+
+article section {
+    text-align: left;
+    align-self: center;
+    padding: 20px;
+}
+
+button{
+    background-color: dimgrey;
+	border-radius:3px;
+	border:2px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	padding:0.5% 2%;
+	text-decoration:none;
+}
+
+.rate {
+    float: center;
+    height: 46px;
+    padding:0 10px;}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;}
+.rate:not(:checked) > label {
+    float:rigth;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;color:#ccc;}
+.rate:not(:checked) > label:before { content: '★ ';}
+.rate > input:checked ~ label {  color: #ffc700;    }
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label { color: #deb217;  }
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label { color: #c59b08;}
